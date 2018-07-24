@@ -1,0 +1,20 @@
+[core]
+	excludesfile = /Users/jnixon/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Joe Nixon
+	email = joe.nixon@motivedrilling.com
+[commit]
+	template = /Users/jnixon/.stCommitMsg
+[alias]
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	acm = !git add -A && git commit -m
+	st = !git status
+	co = !git checkout
+	copl = checkout package-lock.json
+	
