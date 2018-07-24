@@ -6,9 +6,4 @@ if git diff-index --quiet HEAD --
 then
     git add .
     git commit -m "File Sync"
-    git push origin master
-fi
-if ! git diff-index --quiet HEAD --
-then
-    git push origin master
 fi
