@@ -1,9 +1,9 @@
 #!/bin/sh
 echo "Running pre-push script..."
 ./sync.sh
-echo "Committing last changes..."
 if git diff-index --quiet HEAD --
 then
+    echo "Committing last changes..."
     git add .
     git commit -m "File Sync"
     git push origin master
