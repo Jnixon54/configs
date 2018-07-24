@@ -4,7 +4,7 @@
 #	rsync -a ${HOME}+src ${HOME}/dest
 #}
 
-echo "Syncing Config Files."
+echo "Syncing Config Files. "
 
 rsync -a ${HOME}/dotfiles ${HOME}/configs/
 rsync -a ${HOME}/bin ${HOME}/configs/
