@@ -5,7 +5,7 @@
 #}
 
 echo "Syncing Config Files. "
-cd ~/configs
+cd ${HOME}/configs
 rm -rf Brewfile
 brew bundle dump
 rsync -a ${HOME}/dotfiles ${HOME}/configs/
