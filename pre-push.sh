@@ -7,5 +7,7 @@ then
 else
     echo "Committing last changes..."
     git add .
-    git commit -m "File Snc"
+    git commit -m "File Sync"
+    echo "Pushing..."
+    git push origin master
 fi
