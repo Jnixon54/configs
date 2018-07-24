@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "Syncing files..."
+echo "Running pre-push script..."
 ./sync.sh
 echo "Committing last changes..."
 git add .
