@@ -3,4 +3,4 @@ echo "Running pre-push script..."
 ./sync.sh
 echo "Committing last changes..."
 git add .
-git commit -m "File Sync"
+git commit -m "File Syn"
