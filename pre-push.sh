@@ -2,5 +2,6 @@
 echo "Running pre-push script..."
 ./sync.sh
 echo "Committing last changes..."
-git add .
-git commit -m "File Syn"
+if git diff-index --quiet HEAD --
+    git add .
+    git commit -m "File Sync"
