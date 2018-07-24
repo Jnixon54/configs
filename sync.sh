@@ -4,7 +4,9 @@
 #	rsync -a ${HOME}+src ${HOME}/dest
 #}
 
-echo "rsync -a ${HOME}/dotfiles ${HOME}/configs/dotfiles"
-echo "rsync -a ${HOME}/bin ${HOME}/configs/bin"
-echo "rsync -a ${HOME}/Brewfile ${HOME}/configs/Brewfile"
+echo "Syncing Config Files."
+
+rsync -a ${HOME}/dotfiles ${HOME}/configs/dotfiles
+rsync -a ${HOME}/bin ${HOME}/configs/bin
+rsync -a ${HOME}/Brewfile ${HOME}/configs/Brewfile
 
